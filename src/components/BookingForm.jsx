@@ -1,5 +1,9 @@
 import { useState } from "react"
-import { charterPackages, blockedDates } from "../data/charterPackages"
+import {
+  charterPackageGroups,
+  charterPackages,
+  blockedDates,
+} from "../data/charterPackages"
 import "../styles/BookingForm.css"
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -60,11 +64,6 @@ export default function BookingForm({ onSubmit, loading, apiError }) {
   const selectedPackage = charterPackages.find(
     (p) => p.id === values.charterType,
   )
-  const charterPackageGroups = [
-    { label: "Offshore", packages: charterPackages.slice(0, 3) },
-    { label: "Sailfish Special", packages: charterPackages.slice(3, 4) },
-    { label: "Reef Fishing", packages: charterPackages.slice(4) },
-  ].filter((group) => group.packages.length > 0)
 
   const handleChange = (e) => {
     const { name, value } = e.target

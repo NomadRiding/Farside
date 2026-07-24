@@ -1,0 +1,111 @@
+.cta-funnel {
+  min-height: calc(100svh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background:
+    linear-gradient(rgba(10, 37, 64, 0.7), rgba(10, 37, 64, 0.8)),
+    url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600&q=80')
+      center / cover no-repeat;
+}
+
+.cta-funnel__hero {
+  max-width: 640px;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-funnel__eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cta);
+  margin-bottom: 0.75rem;
+}
+
+.cta-funnel__hero h1 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin-bottom: 1rem;
+}
+
+.cta-funnel__subtitle {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  opacity: 0.92;
+  margin-bottom: 1.75rem;
+}
+
+.cta-funnel__benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  text-align: left;
+  display: inline-block;
+}
+
+.cta-funnel__benefits li {
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.cta-funnel__benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--cta);
+  font-weight: 700;
+}
+
+.cta-funnel__cta {
+  margin-bottom: 2.5rem;
+}
+
+.cta-funnel__proof {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-funnel__stars {
+  color: #f5a623;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-funnel__proof blockquote {
+  font-style: italic;
+  margin: 0 0 0.5rem;
+  line-height: 1.55;
+  opacity: 0.95;
+}
+
+.cta-funnel__proof cite {
+  font-style: normal;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.cta-funnel__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.cta-funnel__links a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-funnel__links a:hover {
+  color: #fff;
+}
+
+.cta-funnel__links span {
+  opacity: 0.5;
+}

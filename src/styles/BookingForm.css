@@ -1,0 +1,50 @@
+.booking-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.booking-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.booking-form__summary {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.booking-form__summary p {
+  margin: 0.25rem 0;
+}
+
+.booking-form__legal {
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.8;
+  margin-top: 1.25rem;
+  line-height: 1.5;
+}
+
+.booking-form__legal a {
+  color: var(--ocean);
+}
+
+.booking-form > .btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .booking-form {
+    padding: 1.25rem;
+  }
+}

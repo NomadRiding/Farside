@@ -31,7 +31,7 @@ export const charterPackages = [
   },
   {
     id: 'swordfishing',
-    category: 'Sailfish Special',
+    category: 'Swordfish Special',
     name: 'Swordfishing Charter',
     duration: '8 hours',
     description: 'Swordfishing adventure. Lunch and drinks included.',

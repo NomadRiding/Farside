@@ -1,22 +1,13 @@
 .hero-section {
   position: relative;
-  min-height: clamp(420px, 70vh, 620px);
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background:
-    linear-gradient(rgba(10, 37, 64, 0.55), rgba(10, 37, 64, 0.65)),
-    url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80')
-      center / cover no-repeat;
   color: #fff;
-  padding: 3rem 1.5rem;
-}
-
-.hero-section__overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+  padding: 2rem 1.5rem 4rem;
+  background: none;
 }
 
 .hero-section__content {
@@ -30,7 +21,8 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.9;
+  color: #fff;
+  opacity: 0.92;
   margin-bottom: 0.75rem;
 }
 
@@ -43,6 +35,7 @@
 .hero-section__subtitle {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.6;
+  color: #fff;
   opacity: 0.92;
   margin-bottom: 2rem;
   max-width: 560px;

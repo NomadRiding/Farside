@@ -20,8 +20,8 @@
     rgba(10, 37, 64, 0.08) 0 10px 25px -5px,
     rgba(10, 37, 64, 0.04) 0 4px 10px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'good-web-pro', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Mackin-pro', Georgia, 'Times New Roman', serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/155% var(--sans);
@@ -62,6 +62,18 @@ h3 {
   font-weight: 600;
   color: var(--text-h);
   line-height: 1.2;
+}
+
+p,
+li,
+blockquote,
+cite,
+label,
+input,
+select,
+textarea,
+button {
+  font-family: var(--sans);
 }
 
 h1 {

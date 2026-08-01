@@ -1,11 +1,14 @@
-import { Outlet, Link } from "react-router-dom"
+import { Outlet, Link, useLocation } from "react-router-dom"
 import Header from "../components/Header"
 import "../styles/Layout.css"
 
 export default function MainLayout() {
+  const { pathname } = useLocation()
+  const isHome = pathname === "/"
+
   return (
     <div className="site-layout">
-      <Header />
+      {!isHome && <Header />}
       <main className="site-main">
         <Outlet />
       </main>
@@ -16,10 +19,12 @@ export default function MainLayout() {
             South Florida fishing adventures since 2019
           </p>
           <nav className="site-footer__nav" aria-label="Footer navigation">
+            <Link to="/">Home</Link>
+            <Link to="/charters">Charters</Link>
             <Link to="/about">About</Link>
-            <Link to="/reviews">Reviews</Link>
-            <Link to="/book">Book Now</Link>
-            <Link to="/get-started">Charter Info</Link>
+            <Link to="/captain-services">Captain Services</Link>
+            <Link to="/yachts">Yachts</Link>
+            <Link to="/contacts">Contacts</Link>
           </nav>
           <p className="site-footer__copy">
             &copy; {new Date().getFullYear()} FarSide Charters. All rights

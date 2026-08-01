@@ -4,7 +4,6 @@ import '../styles/Hero.css'
 export default function Hero() {
   return (
     <section className="hero-section" aria-labelledby="hero-heading">
-      <div className="hero-section__overlay" />
       <div className="hero-section__content">
         <p className="hero-section__eyebrow">South Florida Fishing Charters</p>
         <h1 id="hero-heading" className="hero-section__title">

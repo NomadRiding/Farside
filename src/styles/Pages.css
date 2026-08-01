@@ -119,3 +119,125 @@
     width: 100%;
   }
 }
+
+.page__cta {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.page__cta p {
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.charter-group {
+  margin-bottom: 3rem;
+}
+
+.charter-group__title {
+  text-align: left;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.charter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.charter-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.charter-card h3 {
+  margin: 0;
+}
+
+.charter-card__meta {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.charter-card__price {
+  font-family: var(--heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-top: auto;
+}
+
+.charter-card .btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.yacht-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.yacht-card {
+  display: grid;
+  grid-template-columns: minmax(200px, 320px) 1fr;
+  gap: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.yacht-card__image {
+  min-height: 220px;
+  background:
+    linear-gradient(rgba(10, 37, 64, 0.2), rgba(10, 37, 64, 0.2)),
+    url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80')
+      center / cover no-repeat;
+}
+
+.yacht-card__body {
+  padding: 1.75rem 1.75rem 1.75rem 0;
+  text-align: left;
+}
+
+.yacht-card__meta {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0.35rem 0 0.75rem;
+}
+
+.yacht-card__features {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .yacht-card {
+    grid-template-columns: 1fr;
+  }
+
+  .yacht-card__body {
+    padding: 0 1.5rem 1.5rem;
+  }
+}

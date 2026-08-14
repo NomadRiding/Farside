@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import '../styles/Hero.css'
+import { Link } from "react-router-dom"
+import "../styles/Hero.css"
 
 export default function Hero() {
   return (
@@ -7,18 +7,17 @@ export default function Hero() {
       <div className="hero-section__content">
         <p className="hero-section__eyebrow">South Florida Fishing Charters</p>
         <h1 id="hero-heading" className="hero-section__title">
-          Your Next Great Catch Starts Here
+          FarSide Charters
         </h1>
         <p className="hero-section__subtitle">
-          Join Captain Alex aboard the FarSide for half-day and full-day charters.
-          All gear included — just bring your sense of adventure.
+          Welcome to South Florida's Premier Offshore Fishing Experience.
         </p>
         <div className="hero-section__actions">
-          <Link to="/book" className="btn btn-primary btn-lg">
+          <Link to="/book" className="btn btn-primary btn-book-now btn-lg">
             Book Now
           </Link>
           <Link to="/about" className="btn btn-secondary btn-lg">
-            Learn More
+            About Us
           </Link>
         </div>
       </div>

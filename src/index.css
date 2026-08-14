@@ -20,8 +20,8 @@
     rgba(10, 37, 64, 0.08) 0 10px 25px -5px,
     rgba(10, 37, 64, 0.04) 0 4px 10px -2px;
 
-  --sans: 'good-web-pro', system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: 'Mackin-pro', Georgia, 'Times New Roman', serif;
+  --sans: "good-web-pro", system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: "Mackin-pro", Georgia, "Times New Roman", serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/155% var(--sans);
@@ -128,7 +128,10 @@ code {
   border-radius: 8px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.15s;
 }
 
 .btn:focus-visible {
@@ -150,6 +153,18 @@ code {
 .btn-primary:hover:not(:disabled) {
   background: var(--cta-hover);
   border-color: var(--cta-hover);
+}
+
+.btn-book-now {
+  background: #d4af37;
+  border-color: #d4af37;
+  color: #111;
+}
+
+.btn-book-now:hover:not(:disabled) {
+  background: #bf9b30;
+  border-color: #bf9b30;
+  color: #fff;
 }
 
 .btn-secondary {
@@ -222,7 +237,7 @@ code {
   box-shadow: 0 0 0 3px var(--accent-bg);
 }
 
-.form-field input[aria-invalid='true'],
-.form-field select[aria-invalid='true'] {
+.form-field input[aria-invalid="true"],
+.form-field select[aria-invalid="true"] {
   border-color: var(--error);
 }

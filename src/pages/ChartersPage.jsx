@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
-import PageMeta from '../components/PageMeta'
-import { charterPackageGroups } from '../data/charterPackages'
-import '../styles/Pages.css'
+import { Link } from "react-router-dom"
+import PageMeta from "../components/PageMeta"
+import { charterPackageGroups } from "../data/charterPackages"
+import "../styles/Pages.css"
 
 export default function ChartersPage() {
   return (
@@ -14,8 +14,10 @@ export default function ChartersPage() {
         <header className="page__header">
           <h1>Our Charters</h1>
           <p>
-            From reef fishing to offshore adventures and swordfish specials — every
-            trip includes premium gear, bait, and an experienced crew.
+            We have dedicated to making your South Florida fishing experience
+            like no other, We have developed a well trained team who works
+            together to bring you an offshore tournament experience for all
+            levels of anglers.
           </p>
         </header>
 
@@ -31,8 +33,10 @@ export default function ChartersPage() {
                       {pkg.duration} · Up to {pkg.maxParty} guests
                     </p>
                     <p>{pkg.description}</p>
-                    <p className="charter-card__price">${pkg.price.toLocaleString()}</p>
-                    <Link to="/book" className="btn btn-primary">
+                    <p className="charter-card__price">
+                      ${pkg.price.toLocaleString()}
+                    </p>
+                    <Link to="/book" className="btn btn-primary btn-book-now">
                       Book Now
                     </Link>
                   </article>

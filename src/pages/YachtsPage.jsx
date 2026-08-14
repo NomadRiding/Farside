@@ -1,22 +1,31 @@
-import PageMeta from '../components/PageMeta'
-import '../styles/Pages.css'
+import { Link } from "react-router-dom"
+import PageMeta from "../components/PageMeta"
+import "../styles/Pages.css"
 
 const yachts = [
   {
-    name: 'FarSide',
-    type: '34\' Center Console',
-    capacity: '6 guests',
+    name: "FarSide",
+    type: "34' Center Console",
+    capacity: "6 guests",
     description:
-      'Our flagship charter vessel — built for offshore performance and all-day comfort. Full shade, restroom, fish-finding electronics, and premium tackle come standard.',
-    features: ['Offshore & reef capable', 'Premium rods & reels', 'Ice & bottled water included'],
+      "Our flagship charter vessel — built for offshore performance and all-day comfort. Full shade, restroom, fish-finding electronics, and premium tackle come standard.",
+    features: [
+      "Offshore & reef capable",
+      "Premium rods & reels",
+      "Ice & bottled water included",
+    ],
   },
   {
-    name: 'FarSide II',
-    type: '42\' Sportfish',
-    capacity: '8 guests',
+    name: "FarSide II",
+    type: "42' Sportfish",
+    capacity: "8 guests",
     description:
-      'Expanded deck space and overnight-ready amenities for longer runs and larger groups. Ideal for full-day offshore missions and swordfish trips.',
-    features: ['Extended range', 'Enhanced seating & shade', 'Ideal for swordfish & pelagics'],
+      "Expanded deck space and overnight-ready amenities for longer runs and larger groups. Ideal for full-day offshore missions and swordfish trips.",
+    features: [
+      "Extended range",
+      "Enhanced seating & shade",
+      "Ideal for swordfish & pelagics",
+    ],
   },
 ]
 
@@ -29,14 +38,26 @@ export default function YachtsPage() {
       />
       <div className="page">
         <header className="page__header">
-          <h1>Our Fleet</h1>
+          <h1>Yacht Sales</h1>
           <p>
-            Well-maintained vessels outfitted for safety, comfort, and serious fishing
-            across South Florida waters.
+            If you are looking to sell or purchase your dream boat we are here
+            to help. Our experienced broker team working under Rick Obey Yacht
+            Sales, we can find you the right fitting boat. Whether you are a
+            die-hard fishing team or looking for a fun with the whole family. We
+            can find you the boat that fits your needs.
           </p>
+          <div className="page__cta">
+            <p>Ready to buy or sell?</p>
+            <Link
+              to="/contacts"
+              className="btn btn-primary btn-book-now btn-lg"
+            >
+              Contact Us
+            </Link>
+          </div>
         </header>
 
-        <div className="page__content yacht-grid">
+        {/* <div className="page__content yacht-grid">
           {yachts.map((yacht) => (
             <article key={yacht.name} className="yacht-card">
               <div className="yacht-card__image" aria-hidden="true" />
@@ -54,7 +75,7 @@ export default function YachtsPage() {
               </div>
             </article>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   )

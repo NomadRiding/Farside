@@ -9,7 +9,7 @@ export default function HomePage() {
     <>
       <PageMeta
         title="FarSide Charters | South Florida Fishing Charters"
-        description="Book half-day and full-day fishing charters on the South Florida. All gear included. Reserve your trip with FarSide Charters today."
+        description="Book half-day and full-day fishing charters in South Florida. All gear included. Reserve your trip with FarSide Charters today."
       />
       <VideoHeroShell />
       <ReviewsSection limit={3} />

@@ -10,7 +10,7 @@ export default function AboutPage() {
       />
       <div className="page">
         <header className="page__header">
-          <h1>About FarSide Charters</h1>
+          <h1>About FarSide Outfitters</h1>
           <p>
             Family-owned. Coast Guard licensed. Passionate about putting you on
             fish.
@@ -21,17 +21,16 @@ export default function AboutPage() {
           <section className="about-card">
             <h2>Our Story</h2>
             <p>
-              FarSide Charters was founded in 2019 with one goal in minnd:
-              creating unforgettable days on the water. Captain Alex and his
-              team are dedicated to providing a safe, fun, and memorable fishing
-              experience for anglers of all skill levels. From top quality gear
-              to expert guidance, we ensure every trip is tailored to your needs
-              and preferences. Booking a trip with FarSide Charters means more
-              than just fishing.
+              Established in 2019, FarSide Outfitters was created to share the
+              South Florida lifestyle. Delivering a premier offshore experience
+              rooted in tradition, hospitality, and attention to detail. Located
+              in the heart of Miami we have created a first class operation to
+              make sure your offshore experience will keep you coming back. From
+              client to family.
             </p>
           </section>
 
-          <section className="about-card">
+          {/* <section className="about-card">
             <h2>Meet the Owner</h2>
             <p>
               Captain Alex holds a USCG 100-ton Master License and is CPR/First
@@ -43,20 +42,15 @@ export default function AboutPage() {
               for the first time, Alex will make sure you have a safe, fun, and
               memorable day on the water.
             </p>
-          </section>
+          </section> */}
 
           <section className="about-card">
-            <h2>The Boat</h2>
+            <h2>The Fleet</h2>
             <p>
-              The <strong>FarSide</strong> is a 34-foot center console built for
-              comfort and performance. Accommodating up to 6 guests, this vessel
-              provides plenty of space for fishing, or enjoying a relaxing day
-              on the water. Every charter includes top quality fishing gear,
-              safety equipment, tackle, and bait along with water and ice so you
-              can focus on what matters most; catching fish and making memories.
-              The FarSide is equipped with the latest navigation and
-              fish-finding technology, ensuring a safe and productive trip every
-              time.
+              Our flagship vessel is our 34 Ft Seavee powered by twin Yamaha
+              300s. Equipped with the latest electronics and technology. All
+              charters include our tournament grade gear, ice and top quality
+              bait.
             </p>
           </section>
         </div>
@@ -74,13 +68,13 @@ export default function AboutPage() {
               conditions, you receive a full refund or free rescheduling.
             </li>
             <li>
-              <strong>What to bring:</strong> Sunscreen, polarized sunglasses,
-              hat, and non-skid shoes. We provide everything else.
+              <strong>What to bring:</strong> Sunscreen, sunglasses, hat, towel,
+              any medication you may need, food and drinks are not included.
             </li>
             <li>
-              <strong>License:</strong> A valid fishing license is required for
-              all anglers age 16 and older. We can help you purchase one before
-              your trip.
+              <strong>License:</strong> All licenses are provided under our
+              charter license. It is encouraged to purchase your own Florida
+              State License as it helps conservation efforts.
             </li>
           </ul>
         </section>

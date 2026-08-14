@@ -1,22 +1,22 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback } from "react"
 import {
   instagramPosts,
   instagramHandle,
   instagramProfileUrl,
   instagramAutoLoopMs,
-} from '../data/instagramPosts'
-import '../styles/Carousel.css'
+} from "../data/instagramPosts"
+import "../styles/Carousel.css"
 
 function wrapIndex(index, total) {
   return ((index % total) + total) % total
 }
 
 function CarouselSlide({ post, position, direction, onSelect }) {
-  const isCenter = position === 'center'
+  const isCenter = position === "center"
   const enterClass =
     direction >= 0
-      ? 'instagram-carousel__slide--enter-next'
-      : 'instagram-carousel__slide--enter-prev'
+      ? "instagram-carousel__slide--enter-next"
+      : "instagram-carousel__slide--enter-prev"
 
   return (
     <a
@@ -26,7 +26,7 @@ function CarouselSlide({ post, position, direction, onSelect }) {
       className={`instagram-carousel__slide instagram-carousel__slide--${position} ${enterClass}`}
       aria-label={
         isCenter
-          ? `View ${post.type === 'reel' ? 'reel' : 'photo'} on Instagram`
+          ? `View ${post.type === "reel" ? "reel" : "photo"} on Instagram`
           : `Show ${post.alt}`
       }
       onClick={(e) => {
@@ -37,7 +37,7 @@ function CarouselSlide({ post, position, direction, onSelect }) {
       }}
     >
       <img src={post.src} alt={post.alt} loading="lazy" />
-      {post.type === 'reel' && (
+      {post.type === "reel" && (
         <span className="instagram-carousel__reel-badge" aria-hidden="true">
           ▶
         </span>
@@ -91,17 +91,21 @@ export default function ImageCarousel() {
   return (
     <section className="carousel-section" aria-labelledby="carousel-heading">
       <div className="carousel-section__header">
-        <h2 id="carousel-heading">Life on the Water</h2>
+        <h2 id="carousel-heading">Follow us on Social Media</h2>
         <p>
-          Latest moments from{' '}
-          <a href={instagramProfileUrl} target="_blank" rel="noopener noreferrer">
+          Latest moments from{" "}
+          <a
+            href={instagramProfileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @{instagramHandle}
           </a>
         </p>
       </div>
 
       <div
-        className={`instagram-carousel instagram-carousel--dir-${direction >= 0 ? 'next' : 'prev'}`}
+        className={`instagram-carousel instagram-carousel--dir-${direction >= 0 ? "next" : "prev"}`}
         role="region"
         aria-roledescription="carousel"
         aria-label="Instagram photo gallery"
@@ -153,13 +157,17 @@ export default function ImageCarousel() {
         </button>
       </div>
 
-      <div className="carousel__dots" role="tablist" aria-label="Instagram slides">
+      <div
+        className="carousel__dots"
+        role="tablist"
+        aria-label="Instagram slides"
+      >
         {instagramPosts.map((post, index) => (
           <button
             key={post.id}
             type="button"
             role="tab"
-            className={`carousel__dot ${index === current ? 'is-active' : ''}`}
+            className={`carousel__dot ${index === current ? "is-active" : ""}`}
             aria-selected={index === current}
             aria-label={`Go to slide ${index + 1}`}
             onClick={() => goToDot(index)}

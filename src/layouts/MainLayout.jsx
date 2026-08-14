@@ -20,11 +20,11 @@ export default function MainLayout() {
           </p>
           <nav className="site-footer__nav" aria-label="Footer navigation">
             <Link to="/">Home</Link>
-            <Link to="/charters">Charters</Link>
             <Link to="/about">About</Link>
+            <Link to="/charters">Charters</Link>
             <Link to="/captain-services">Captain Services</Link>
-            <Link to="/yachts">Yachts</Link>
-            <Link to="/contacts">Contacts</Link>
+            <Link to="/yachts">Yacht Sales</Link>
+            <Link to="/contacts">Contact</Link>
           </nav>
           <p className="site-footer__copy">
             &copy; {new Date().getFullYear()} FarSide Charters. All rights

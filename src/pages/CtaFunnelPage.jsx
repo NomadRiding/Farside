@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageMeta from '../components/PageMeta'
+import BookNowLink from '../components/BookNowLink'
 import { reviews } from '../data/reviews'
 import '../styles/Pages.css'
 import '../styles/CtaFunnel.css'
@@ -28,9 +29,9 @@ export default function CtaFunnelPage() {
             <li>Secure online booking with instant confirmation</li>
           </ul>
 
-          <Link to="/book" className="btn btn-primary btn-lg cta-funnel__cta">
+          <BookNowLink className="btn btn-primary btn-lg cta-funnel__cta">
             Book Your Trip
-          </Link>
+          </BookNowLink>
 
           <div className="cta-funnel__proof">
             <div className="cta-funnel__stars" aria-label={`${featured.rating} out of 5 stars`}>

@@ -2,29 +2,6 @@ import { Link } from "react-router-dom"
 import PageMeta from "../components/PageMeta"
 import "../styles/Pages.css"
 
-const services = [
-  {
-    title: "Private Fishing Charters",
-    description:
-      "Fully crewed trips tailored to your group — inshore, offshore, reef, or swordfish. Captain Alex handles navigation, rigging, and fish handling so you can focus on the action.",
-  },
-  {
-    title: "Corporate & Group Outings",
-    description:
-      "Team-building days on the water with flexible itineraries, catering coordination, and multi-boat options for larger groups.",
-  },
-  {
-    title: "Special Occasion Trips",
-    description:
-      "Birthdays, bachelor parties, and family reunions. We customize the pace, target species, and onboard experience for your celebration.",
-  },
-  {
-    title: "Captain-for-Hire Consultations",
-    description:
-      "Planning your own vessel trip? Book Captain Alex for route planning, species targeting advice, and on-water coaching.",
-  },
-]
-
 export default function CaptainServicesPage() {
   return (
     <>
@@ -61,15 +38,6 @@ export default function CaptainServicesPage() {
             help with haul-outs either on a trailer or at a boat yard.
           </p>
         </header>
-
-        {/* <div className="page__content about-grid">
-          {services.map((service) => (
-            <section key={service.title} className="about-card">
-              <h2>{service.title}</h2>
-              <p>{service.description}</p>
-            </section>
-          ))}
-        </div> */}
 
         <div className="page__cta">
           <p>Ready to plan your trip?</p>

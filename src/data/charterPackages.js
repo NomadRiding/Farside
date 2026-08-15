@@ -6,8 +6,9 @@ export const charterPackages = [
     duration: '4 hours',
     description: 'Perfect for families and first-timers. Offshore fishing with all gear included.',
     price: 1000,
-    priceId: import.meta.env.VITE_STRIPE_PRICE_HALF_DAY || '',
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/YKNHZNUVQWAZV2M7XYTGS73O',
   },
   {
     id: '3/4-day',
@@ -16,8 +17,9 @@ export const charterPackages = [
     duration: '6 hours',
     description: '3/4-day adventure with offshore and offshore options. Lunch and drinks included.',
     price: 1250,
-    priceId: import.meta.env.VITE_STRIPE_PRICE_3_4_DAY || '',
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/FUHQV53JOAHWJOGN5VOOFAOJ',
   },
   {
     id: 'full-day',
@@ -26,8 +28,9 @@ export const charterPackages = [
     duration: '8 hours',
     description: 'Full-day adventure with offshore and offshore options. Lunch and drinks included.',
     price: 1500,
-    priceId: import.meta.env.VITE_STRIPE_PRICE_FULL_DAY || '',
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/XKKKCL7K26XCORVH32XT5HK4',
   },
   {
     id: 'swordfishing',
@@ -36,39 +39,10 @@ export const charterPackages = [
     duration: '8 hours',
     description: 'Swordfishing adventure. Lunch and drinks included.',
     price: 3000,
-    priceId: import.meta.env.VITE_STRIPE_PRICE_SWORD_FISHING || '',
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/DLQLZVQYI4QKUHBGBNHYV5VH',
   },
-  // {
-  //   id: 'reef-half-day',
-  //   category: 'Reef Fishing',
-  //   name: 'Reef Half Day Charter',
-  //   duration: '4 hours',
-  //   description: 'Perfect for families and first-timers. Offshore fishing with all gear included.',
-  //   price: 1000,
-  //   priceId: import.meta.env.VITE_STRIPE_PRICE_HALF_DAY || '',
-  //   maxParty: 6,
-  // },
-  // {
-  //   id: 'reef-3/4-day',
-  //   category: 'Reef Fishing',
-  //   name: 'Reef 3/4 Day Charter',
-  //   duration: '6 hours',
-  //   description: '3/4-day adventure with offshore and offshore options. Lunch and drinks included.',
-  //   price: 1200,
-  //   priceId: import.meta.env.VITE_STRIPE_PRICE_3_4_DAY || '',
-  //   maxParty: 6,
-  // },
-  // {
-  //   id: 'reef-full-day',
-  //   category: 'Reef Fishing',
-  //   name: 'Reef Full Day Charter',
-  //   duration: '8 hours',
-  //   description: 'Full-day adventure with offshore and offshore options. Lunch and drinks included.',
-  //   price: 1600,
-  //   priceId: import.meta.env.VITE_STRIPE_PRICE_FULL_DAY || '',
-  //   maxParty: 6,
-  // },
 ]
 
 export const charterPackageGroups = charterPackages.reduce((groups, pkg) => {
@@ -86,9 +60,3 @@ export const charterPackageGroups = charterPackages.reduce((groups, pkg) => {
 
   return groups
 }, [])
-
-export const blockedDates = [
-  '2026-07-04',
-  '2026-12-25',
-  '2026-12-31',
-]

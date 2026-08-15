@@ -1,0 +1,28 @@
+.square-appointments {
+  width: 100%;
+  min-height: 720px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.square-appointments--error {
+  padding: 2rem;
+  text-align: center;
+}
+
+.square-appointments iframe {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .square-appointments,
+  .square-appointments iframe {
+    min-height: 640px;
+  }
+}

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import BookNowLink from "./BookNowLink"
 import "../styles/Hero.css"
 
 export default function Hero() {
@@ -13,9 +14,7 @@ export default function Hero() {
           Welcome to South Florida's Premier Offshore Fishing Experience.
         </p>
         <div className="hero-section__actions">
-          <Link to="/book" className="btn btn-primary btn-book-now btn-lg">
-            Book Now
-          </Link>
+          <BookNowLink className="btn btn-primary btn-book-now btn-lg" />
           <Link to="/about" className="btn btn-secondary btn-lg">
             About Us
           </Link>

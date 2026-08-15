@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
 import PageMeta from "../components/PageMeta"
+import BookNowLink from "../components/BookNowLink"
 import { charterPackageGroups } from "../data/charterPackages"
 import "../styles/Pages.css"
 
@@ -36,9 +36,7 @@ export default function ChartersPage() {
                     <p className="charter-card__price">
                       ${pkg.price.toLocaleString()}
                     </p>
-                    <Link to="/book" className="btn btn-primary btn-book-now">
-                      Book Now
-                    </Link>
+                    <BookNowLink href={pkg.bookingUrl} />
                   </article>
                 ))}
               </div>

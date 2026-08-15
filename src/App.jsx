@@ -7,7 +7,7 @@ import CaptainServicesPage from './pages/CaptainServicesPage'
 import YachtsPage from './pages/YachtsPage'
 import ContactsPage from './pages/ContactsPage'
 import ReviewsPage from './pages/ReviewsPage'
-import BookNowPage, { BookSuccessPage } from './pages/BookNowPage'
+import BookNowPage from './pages/BookNowPage'
 import CtaFunnelPage from './pages/CtaFunnelPage'
 
 export default function App() {
@@ -22,7 +22,6 @@ export default function App() {
         <Route path="contacts" element={<ContactsPage />} />
         <Route path="reviews" element={<ReviewsPage />} />
         <Route path="book" element={<BookNowPage />} />
-        <Route path="book/success" element={<BookSuccessPage />} />
         <Route path="get-started" element={<CtaFunnelPage />} />
       </Route>
     </Routes>

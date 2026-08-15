@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import PageMeta from "../components/PageMeta"
+import BookNowLink from "../components/BookNowLink"
 import "../styles/Pages.css"
 
 export default function ContactsPage() {
@@ -54,12 +55,10 @@ export default function ContactsPage() {
           <section className="about-card">
             <h2>Book Online</h2>
             <p>
-              Prefer to reserve instantly? Choose your charter package and
-              secure your date with online payment.
+              Prefer to reserve instantly? Choose your charter package and book
+              your date online through Square.
             </p>
-            <Link to="/book" className="btn btn-primary btn-book-now">
-              Book Now
-            </Link>
+            <BookNowLink />
           </section>
         </div>
       </div>

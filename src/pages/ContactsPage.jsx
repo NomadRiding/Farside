@@ -23,7 +23,7 @@ export default function ContactsPage() {
           <section className="about-card">
             <h2>Phone</h2>
             <p>
-              <a href="tel:+15551234567">(555) 123-4567</a>
+              <a href="tel:+17863262519">(786) 326-2519</a>
             </p>
             <p className="form-hint">Daily, 7am – 7pm ET</p>
           </section>
@@ -31,8 +31,8 @@ export default function ContactsPage() {
           <section className="about-card">
             <h2>Email</h2>
             <p>
-              <a href="mailto:info@farsidecharters.com">
-                info@farsidecharters.com
+              <a href="mailto:farsideoutfitters@gmail.com">
+                farsideoutfitters@gmail.com
               </a>
             </p>
             <p className="form-hint">

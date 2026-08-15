@@ -8,10 +8,11 @@ function shouldEnableHeroVideo() {
 
 /**
  * Returns true unless the user prefers reduced motion.
- * Hero video uses muted autoplay with playsInline for mobile compatibility.
+ * Initializes synchronously so the video element can mount on first paint,
+ * which mobile Safari requires for muted autoplay to work reliably.
  */
 export default function useHeroVideoEnabled() {
-  const [enabled, setEnabled] = useState(false)
+  const [enabled, setEnabled] = useState(() => shouldEnableHeroVideo())
 
   useEffect(() => {
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')

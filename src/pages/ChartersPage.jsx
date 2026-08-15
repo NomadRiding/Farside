@@ -36,7 +36,7 @@ export default function ChartersPage() {
                     <p className="charter-card__price">
                       ${pkg.price.toLocaleString()}
                     </p>
-                    <BookNowLink />
+                    <BookNowLink href={pkg.bookingUrl} />
                   </article>
                 ))}
               </div>

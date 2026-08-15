@@ -7,6 +7,8 @@ export const charterPackages = [
     description: 'Perfect for families and first-timers. Offshore fishing with all gear included.',
     price: 1000,
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/YKNHZNUVQWAZV2M7XYTGS73O',
   },
   {
     id: '3/4-day',
@@ -16,6 +18,8 @@ export const charterPackages = [
     description: '3/4-day adventure with offshore and offshore options. Lunch and drinks included.',
     price: 1250,
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/FUHQV53JOAHWJOGN5VOOFAOJ',
   },
   {
     id: 'full-day',
@@ -25,6 +29,8 @@ export const charterPackages = [
     description: 'Full-day adventure with offshore and offshore options. Lunch and drinks included.',
     price: 1500,
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/XKKKCL7K26XCORVH32XT5HK4',
   },
   {
     id: 'swordfishing',
@@ -34,6 +40,8 @@ export const charterPackages = [
     description: 'Swordfishing adventure. Lunch and drinks included.',
     price: 3000,
     maxParty: 6,
+    bookingUrl:
+      'https://book.squareup.com/appointments/dh80r9r3o5w1kf/location/LAT51S1T60TGM/services/DLQLZVQYI4QKUHBGBNHYV5VH',
   },
 ]
 
